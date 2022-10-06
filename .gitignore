@@ -1,16 +1,10 @@
-# engine
 Libs/bin
 Libs/bin-int
-
-#sandbox
 **/bin
 **/bin-int
-
-# Windows project files
 **/*.sln
 **/*.vcxproj
 **/*.vcxproj.user
 **/*.vcxproj.filters
 .vs/
-
 .vscode
