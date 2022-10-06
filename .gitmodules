@@ -1,0 +1,9 @@
+[submodule "Libs/glfw"]
+	path = Libs/glfw
+	url = git@github.com:glfw/glfw.git
+[submodule "Libs/glm"]
+	path = Libs/glm
+	url = git@github.com:g-truc/glm.git
+[submodule "Libs/imgui"]
+	path = Libs/imgui
+	url = git@github.com:ocornut/imgui.git
