@@ -1,15 +1,21 @@
 # OpenGL-Workshops
 OpenGL code for MacEwan Computer Science Students
-* currently developed for windows 10
 
 ## How to run
 Clone using 
 ```
 git clone --recursive
 ```
-
+### Mac
 Navigate the workshop you would like to run and type 
 ```
-..\..\bin\premake\premake5.exe vs2019
+../../bin/premake/mac/premake5 gmake
 ```
+
+### windows
+Navigate the workshop you would like to run and type 
+```
+..\..\bin\premake\win\premake5.exe vs2019
+```
+
 Then build the resulting sln file
