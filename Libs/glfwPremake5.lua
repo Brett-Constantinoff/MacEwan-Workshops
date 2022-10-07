@@ -57,6 +57,29 @@ project "GLFW"
 			"_GLFW_WIN32",
 			"_CRT_SECURE_NO_WARNINGS"
 		}
+	
+	filter "system:not windows"
+		files
+		{
+			"glfw/src/cocoa_time.h",
+			"glfw/src/cocoa_time.c",
+			"glfw/src/posix_thread.h",
+			"glfw/src/posix_module.c",
+			"glfw/src/posix_thread.c",
+			"glfw/src/cocoa_platform. ",
+			"glfw/src/cocoa_joystick.h",
+			"glfw/src/cocoa_init.m",
+			"glfw/src/cocoa_joystick.m", 
+			"glfw/src/cocoa_monitor.m",
+			"glfw/src/cocoa_window.m",    
+			"glfw/src/nsgl_context.m",
+		}
+
+		defines
+		{
+			"_GLFW_COCOA",
+			"_GL_SILENCE_DEPRECATION"
+		}
 
 	filter "configurations:Debug"
 		runtime "Debug"

@@ -14,7 +14,6 @@ workspace "Workshop"
 
 include "../../Libs/glfwPremake5.lua"
 include "../../Libs/glmPremake5.lua"
-include "../../Libs/imguiPremake5.lua"
 include "../../Libs/gladPremake5.lua"
 
 project "Intro"
@@ -30,7 +29,6 @@ project "Intro"
     {
         "../../Libs/glfw/include/", 
         "../../Libs/glm/", 
-        "../../Libs/imgui/", 
         "../../Libs/glad/include/",
     }
 
@@ -38,12 +36,28 @@ project "Intro"
     {
         "Src/**.cpp"
     }
-
     links
     {
         "GLFW", 
         "GLM", 
-        "ImGui" ,
         "GLAD",
-        "OpenGL32"
     }
+    filter "system:windows"
+		systemversion "latest"
+		staticruntime "On"
+        links
+        {
+            "OpenGL32"
+        }
+    filter "system:macosx"
+        links
+        {
+            "OpenGL.framework",
+            "Cocoa.framework",
+            "IOKit.framework",
+            "CoreFoundation.framework"
+        }
+        defines
+        {
+            "GL_SILENCE_DEPRECATION"
+        }
