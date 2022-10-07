@@ -1,6 +1,5 @@
 Libs/bin
 Libs/bin-int
-**/bin
 **/bin-int
 **/*.sln
 **/*.vcxproj
@@ -8,3 +7,6 @@ Libs/bin-int
 **/*.vcxproj.filters
 .vs/
 .vscode
+**.make
+**.DS_Store
+Workshops/bin

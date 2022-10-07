@@ -12,6 +12,12 @@ Navigate the workshop you would like to run and type
 ../../bin/premake/mac/premake5 gmake
 ```
 
+To run go to
+```
+bin/Debug/
+```
+and run the exe
+
 ### windows
 Navigate the workshop you would like to run and type 
 ```
