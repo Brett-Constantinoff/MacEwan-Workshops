@@ -34,7 +34,9 @@ project "Intro"
 
     files
     {
-        "Src/**.cpp"
+        "Src/**.cpp",
+        "Src/**.h"
+
     }
     links
     {
