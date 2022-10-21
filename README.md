@@ -1,5 +1,5 @@
-# OpenGL-Workshops
-OpenGL code for MacEwan Computer Science Students
+# MacEwab-Workshops
+Workshop code for MacEwan Computer Science Students
 
 ## How to run
 Clone using 
